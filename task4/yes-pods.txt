@@ -1,0 +1,6 @@
+NAME                                 READY   STATUS      RESTARTS   AGE     IP              NODE    NOMINATED NODE   READINESS GATES
+busybox-echo                         0/1     Completed   0          16m     10.233.67.26    node3   <none>           <none>
+flask-application-55cbd68f69-jvbv7   1/1     Running     0          3m47s   10.233.66.209   node2   <none>           <none>
+flask-application-55cbd68f69-tj2vw   1/1     Running     0          3m47s   10.233.65.220   node1   <none>           <none>
+nginx1                               1/1     Running     0          31m     10.233.67.243   node3   <none>           <none>
+nginx2                               1/1     Running     0          30m     10.233.65.226   node1   <none>           <none>

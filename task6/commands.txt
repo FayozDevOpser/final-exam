@@ -1,0 +1,3 @@
+kubectl create deployment final-exam   --image=nvrbckdown/flask-app:final-exam   -n fayoz-final
+ kubectl set env deployment/final-exam  AUTHOR="YOUR_NAME"  POD='$(POD_NAME)'  NODE='$(NODE_NAME)' 
+ kubectl apply -f final-exam-deployment.yaml

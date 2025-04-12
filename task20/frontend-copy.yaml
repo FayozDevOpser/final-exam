@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-something-copy
+  namespace: fayoz-final
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend-copy
+  template:
+    metadata:
+      labels:
+        app: frontend-copy
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: final
+                operator: In
+                values:
+                - exam
+      containers:
+      - name: frontend
+        image: nvrbckdown/something
+        ports:
+        - containerPort: 80
+

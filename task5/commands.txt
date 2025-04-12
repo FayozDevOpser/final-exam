@@ -1,0 +1,2 @@
+ kubectl create configmap config-info --from-literal=AUTHOR=$$fayoz --from-literal=EXAM_TYPE="Final Exam"
+kubectl apply -f nginx-configmap-deploy.yaml

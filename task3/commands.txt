@@ -1,0 +1,2 @@
+kubectl run busybox-echo  --image=busybox  --restart=Never   --namespace=fayoz-final  --command -- echo "The BEST DevOps COURSE!!!"
+kubectl logs busybox-echo -n fayoz-final

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-something
+  namespace: fayoz-final
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend-something
+  template:
+    metadata:
+      labels:
+        app: frontend-something
+    spec:
+      containers:
+      - name: frontend
+        image: nvrbckdown/something
+        ports:
+        - containerPort: 80

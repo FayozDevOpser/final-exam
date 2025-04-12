@@ -1,0 +1,1 @@
+ kubectl api-resources --api-group=longhorn.io -o wide | grep v1beta2 | awk '{print $2}'

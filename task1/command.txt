@@ -1,0 +1,6 @@
+kubectl run nginx1 --image=nginx --restart=Never--namespace=fayoz-final --labels="last=final,author=fayoz"
+kubectl run nginx2 --image=nginx --restart=Never --namespace=fayoz-final  --labels="last=final,author=fayoz"
+kubectl get pods -n fayoz-final -o yaml > running-pods.yaml
+
+kubectl apply -f nginx1.yaml
+kubectl apply -f nginx2.yaml

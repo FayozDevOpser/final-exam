@@ -1,0 +1,6 @@
+kubectl create secret docker-registry regcred \
+  --docker-username=devops \
+  --docker-password=devopsTheBest \
+  --docker-email=proxima_uacademy@gmail.com \
+  -n fayoz-final \
+  --dry-run=client -o yaml > docker-secret.yaml

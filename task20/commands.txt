@@ -1,0 +1,1 @@
+kubectl get deployment frontend-something -n fayoz-final -o yaml > frontend-copy.yaml

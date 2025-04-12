@@ -1,0 +1,4 @@
+kubectl create deployment flask-application  --image=nvrbckdown/flask-app:last-practice  --replicas=2   --namespace=fayoz-final  --dry-run=client -o yaml > flask-deployment.yaml
+kubectl apply -f flask-deployment.yaml
+kubectl get pods -n fayoz-final -o wide > yes-pods.txt
+

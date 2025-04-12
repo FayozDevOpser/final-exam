@@ -1,0 +1,15 @@
+NAMESPACE         NAME     READY   STATUS    RESTARTS   AGE
+dilmurod-final    nginx1   1/1     Running   0          52m
+dilmurod-final    nginx2   1/1     Running   0          52m
+fayoz-final       nginx1   1/1     Running   0          10m
+fayoz-final       nginx2   1/1     Running   0          9m47s
+fazliddin-final   nginx1   1/1     Running   0          55m
+fazliddin-final   nginx2   1/1     Running   0          55m
+ibrohim-final     nginx1   1/1     Running   0          86m
+ibrohim-final     nginx2   1/1     Running   0          85m
+j-jumanazarov     nginx1   1/1     Running   0          70m
+j-jumanazarov     nginx2   1/1     Running   0          69m
+rakhimjon-final   nginx1   1/1     Running   0          74m
+rakhimjon-final   nginx2   1/1     Running   0          73m
+zoyirjon-final    nginx1   1/1     Running   0          95m
+zoyirjon-final    nginx2   1/1     Running   0          94m

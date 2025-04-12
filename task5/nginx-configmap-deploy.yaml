@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deploy
+  namespace: fayoz-final
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        envFrom:
+        - configMapRef:
+            name: config-info
+        command: ["/bin/sh", "-c"]
+        args:
+          - echo "My name is $AUTHOR and this is my $EXAM_TYPE"; sleep 3600

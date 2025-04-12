@@ -1,0 +1,16 @@
+[
+  {
+    "effect": "NoSchedule",
+    "key": "node-role.kubernetes.io/control-plane"
+  }
+]
+null
+null
+null
+[
+  {
+    "effect": "NoSchedule",
+    "key": "devops",
+    "value": "course"
+  }
+]
